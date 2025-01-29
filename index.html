@@ -24,57 +24,64 @@
   </head>
   <body>
     <main>
-      <div class="img-thumbnail">
-        <picture>
-          <source
-            media="(min-width: 48rem)"
-            srcset="./assets/images/illustration-sign-up-desktop.svg" />
-          <img
-            src="./assets/images/illustration-sign-up-mobile.svg"
-            alt="product manager graphics" />
-        </picture>
-      </div>
-
-      <!-- Sign-up form start -->
-      <section class="subscribe-page">
-        <div class="card">
-          <div class="card-header">
-            <h1>Stay updated!</h1>
-          </div>
-          <div class="card-body">
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-              <li>
-                <img src="./assets/images/icon-list.svg" alt="Icon" />
-                <span>Product discovery and building what matters</span>
-              </li>
-
-              <li>
-                <img src="./assets/images/icon-list.svg" /><span
-                  >Measuring to ensure updates are a success</span
-                >
-              </li>
-
-              <li>
-                <img src="./assets/images/icon-list.svg" /><span
-                  >And much more!</span
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="home">
+        <div class="img-thumbnail">
+          <picture>
+            <source
+              media="(min-width: 48rem)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg" />
+            <img
+              src="./assets/images/illustration-sign-up-mobile.svg"
+              alt="product manager graphics" />
+          </picture>
         </div>
 
-        <form class="signup-form">
-          <label for="email">Email address</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@company.com" />
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
-      </section>
-      <!-- Sign-up form end -->
+        <!-- Sign-up form start -->
+        <section class="subscribe-page">
+          <div class="card">
+            <div class="card-header">
+              <h1>Stay updated!</h1>
+            </div>
+            <div class="card-body">
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+              <ul>
+                <li>
+                  <img src="./assets/images/icon-list.svg" alt="Icon" />
+                  <span>Product discovery and building what matters</span>
+                </li>
+
+                <li>
+                  <img src="./assets/images/icon-list.svg" /><span
+                    >Measuring to ensure updates are a success</span
+                  >
+                </li>
+
+                <li>
+                  <img src="./assets/images/icon-list.svg" /><span
+                    >And much more!</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form id="signup-form">
+            <label for="email">Email address</label>
+            <div class="input-control">
+              <div class="error"></div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com" />
+            </div>
+            <button type="submit" id="subs-button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
+        <!-- Sign-up form end -->
+      </div>
 
       <!-- Success message start -->
       <section class="success-message">
@@ -85,7 +92,7 @@
           <a href="#">ash@loremcompany.com</a>. Please open it and click the
           button inside to confirm your subscription.
         </p>
-        <button type="button">Dismiss message</button>
+        <button type="button" id="dismiss-button">Dismiss message</button>
       </section>
       <!-- Success message end -->
 

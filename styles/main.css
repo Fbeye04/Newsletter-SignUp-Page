@@ -28,6 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: var(--font-weight-normal);
   min-height: 100vh;
+  background-color: var(--Dark-Slate-Grey);
 }
 
 main {
@@ -36,6 +37,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  background-color: var(--White);
 }
 
 .img-thumbnail {
@@ -97,7 +99,7 @@ main {
   padding-left: 1rem;
 }
 
-.signup-form {
+#signup-form {
   width: 100%;
   padding: 0 2.2rem;
   display: flex;
@@ -105,13 +107,23 @@ main {
   gap: 1rem;
 }
 
-.signup-form label {
+#signup-form label {
   font-size: 0.8rem;
   color: var(--Dark-Slate-Grey);
   font-weight: var(--font-weight-bold);
 }
 
-.signup-form input {
+#signup-form .input-control.error input {
+  border-color: red;
+}
+
+#signup-form .input-control .error {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+#signup-form input {
   display: block;
   width: 100%;
   border-radius: 0.3rem;
@@ -120,7 +132,7 @@ main {
   font-size: 1rem;
 }
 
-.signup-form button {
+#signup-form button {
   padding: 1rem;
   border-radius: 0.3rem;
   border-style: none;
@@ -128,6 +140,10 @@ main {
   color: var(--White);
   font-weight: var(--font-weight-bold);
   font-size: 1rem;
+}
+
+.hide {
+  display: none;
 }
 
 .attribution {
