@@ -1,5 +1,5 @@
 const signupHome = document.querySelector(".home");
-const successMessage = document.querySelector(".success-message");
+const successMessage = document.querySelector(".success-state");
 const subscribeButton = document.getElementById("subs-button");
 const dismissButton = document.getElementById("dismiss-button");
 const emailInput = document.getElementById("email");
