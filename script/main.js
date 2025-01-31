@@ -3,11 +3,13 @@ const successMessage = document.querySelector(".success-state");
 const subscribeButton = document.getElementById("subs-button");
 const dismissButton = document.getElementById("dismiss-button");
 const emailInput = document.getElementById("email");
+const userEmail = document.getElementById("user-email");
 
 const handleSignUpHome = (e) => {
   e.preventDefault();
 
   const emailValue = emailInput.value;
+  userEmail.innerHTML = emailValue;
 
   if (validateEmail(emailValue)) {
     setSuccess(emailInput);
